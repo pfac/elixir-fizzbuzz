@@ -1,19 +1,3 @@
-defmodule FizzBuzz do
-
-  def fizzbuzz(3) do
-    "Fizz"
-  end
-
-  def fizzbuzz(5) do
-    "Buzz"
-  end
-
-  def fizzbuzz(n) do
-    n
-  end
-
-end
-
 defmodule FizzBuzzTest do
   use ExUnit.Case
 
@@ -25,7 +9,8 @@ defmodule FizzBuzzTest do
     assert FizzBuzz.fizzbuzz(5) == "Buzz"
   end
 
-  test "1 is 1" do
-    assert FizzBuzz.fizzbuzz(1) == 1
+  test "any other is n" do
+    n = :random.uniform 100
+    assert FizzBuzz.fizzbuzz(n) == n
   end
 end
