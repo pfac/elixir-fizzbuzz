@@ -1,4 +1,4 @@
-defmodule Fizzbuzz do
+defmodule FizzBuzz do
 
   def fizzbuzz(3) do
     "Fizz"
@@ -14,18 +14,18 @@ defmodule Fizzbuzz do
 
 end
 
-defmodule FizzbuzzTest do
+defmodule FizzBuzzTest do
   use ExUnit.Case
 
   test "3 is fizz" do
-    assert Fizzbuzz.fizzbuzz(3) == "Fizz"
+    assert FizzBuzz.fizzbuzz(3) == "Fizz"
   end
 
   test "5 is buzz" do
-    assert Fizzbuzz.fizzbuzz(5) == "Buzz"
+    assert FizzBuzz.fizzbuzz(5) == "Buzz"
   end
 
   test "1 is 1" do
-    assert Fizzbuzz.fizzbuzz(1) == 1
+    assert FizzBuzz.fizzbuzz(1) == 1
   end
 end
